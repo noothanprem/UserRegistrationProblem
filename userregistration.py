@@ -4,7 +4,7 @@ class UserRegistration:
 	
 	def first_name_check(self,first_name):
 		
-		pattern = "^[A-Z][a-z]{3,}"
+		pattern = "^[A-Z][a-z]{3,}$"
 		result  = re.search(pattern,first_name)
 		if result:
 			print("Valid First name")
@@ -13,7 +13,7 @@ class UserRegistration:
 
 	def last_name_check(self,last_name):
 		
-		pattern = "^[A-Z][a-z]{3,}"
+		pattern = "^[A-Z][a-z]{3,}$"
 		
 		result = re.search(pattern,last_name)
 		if result:
@@ -48,9 +48,9 @@ if __name__ == "__main__":
 	
 	first_name=input("Enter the first name : ")
 	userregistration_object.first_name_check(first_name)
-	last_name = input("Enter the last name : ")
-	userregistration_object.last_name_check(last_name)
-	email=input("Enter the email address : ")
-	userregistration_object.email_check(email)
-	mobile_number = input("Enter the mobile number : ")
-	userregistration_object.mobile_number_check(mobile_number)
+	#last_name = input("Enter the last name : ")
+	#userregistration_object.last_name_check(last_name)
+	#email=input("Enter the email address : ")
+	#userregistration_object.email_check(email)
+	#mobile_number = input("Enter the mobile number : ")
+	#userregistration_object.mobile_number_check(mobile_number)
